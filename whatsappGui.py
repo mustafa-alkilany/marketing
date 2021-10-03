@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 import keyboard, os, pyautogui, time
 from tkinter import *
+=======
+import os, time, pyautogui, keyboard, pyperclip, instaloader
+from tkinter import *
+from getpass import getpass
+>>>>>>> ee9da27a6038e674154901c3c654af17cba31939
 
 while True:
     try:
@@ -11,9 +17,15 @@ while True:
 
 root = Tk()
 
+<<<<<<< HEAD
 int_result = ''
 
 
+=======
+
+
+int_result = ''
+>>>>>>> ee9da27a6038e674154901c3c654af17cba31939
 def returnEntry(arg=None):
     global int_result
     result = myEntry.get()
@@ -22,6 +34,10 @@ def returnEntry(arg=None):
     myEntry.delete(0, END)
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ee9da27a6038e674154901c3c654af17cba31939
 Label(root, text="Hi friend you need to setup the program first").pack()
 
 Label(root, text="Enter how many numbers you have in the file").pack()
@@ -34,14 +50,20 @@ enterEntry.pack(fill=X)
 
 twoResult = ''
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ee9da27a6038e674154901c3c654af17cba31939
 def returnEntryTwo(arg=None):
     global twoResult
     twoResult = TwoEntry.get()
     # print(twoResult)
     TwoEntry.delete(0, END)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ee9da27a6038e674154901c3c654af17cba31939
 Label(root, text="Enter the file that have the numbers").pack()
 TwoEntry = Entry(root, width=40)
 TwoEntry.focus()
@@ -50,16 +72,24 @@ TwoEntry.pack()
 TwoEnterEntry = Button(root, text="Enter", command=returnEntryTwo)
 TwoEnterEntry.pack(fill=X)
 
+<<<<<<< HEAD
 threeResult = ''
 
 
+=======
+
+threeResult = ''
+>>>>>>> ee9da27a6038e674154901c3c654af17cba31939
 def returnEntryThree(arg=None):
     global threeResult
     threeResult = threeEntry.get()
     # print(threeResult)
     threeEntry.delete(0, END)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ee9da27a6038e674154901c3c654af17cba31939
 Label(root, text="Enter the message file").pack()
 threeEntry = Entry(root, width=40)
 threeEntry.focus()
@@ -72,7 +102,10 @@ Button(root, text="Start the program", command=root.destroy).pack()
 root.geometry("+750+400")
 root.mainloop()
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ee9da27a6038e674154901c3c654af17cba31939
 def whatsapp():
     whatsapp_object_ = open(twoResult)
     pyautogui.press("win")
@@ -111,5 +144,8 @@ def whatsapp():
         pyautogui.keyUp("enter")
     whatsapp_object_.close()
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ee9da27a6038e674154901c3c654af17cba31939
 whatsapp()
